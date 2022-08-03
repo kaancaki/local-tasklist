@@ -1,0 +1,136 @@
+:root{
+    --main-color: rgb(44, 62, 80, 1.0);
+    --main-color-light: rgb(44, 62, 80, 0.5);
+    --accent-color: rgb(231,76,60, 1.0);
+    --accent-color-light: rgb(231,76,60, 0.5);
+}
+/* Burada root alanına tanımladığımız değerleri  var(--main-color) şeklinde kullanabiliyoruz*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;   
+    background-image: linear-gradient(to right top, #666969, #3f727e, #0078a2, #0078c8, #0070e5, #007bee, #0086f7, #0091ff, #00b1ff, #00ccff, #00e5fd, #5ffbf1);
+    background-repeat: no-repeat; 
+    min-height: 100vh;
+}
+
+.main-title{
+    font-size: 4em;
+    color: #ffffff;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(48, 48, 48, .3);
+    -moz-box-shadow: 0 8px 6px -6px rgba(48, 48, 48, .3);
+         box-shadow: 0 8px 6px -6px rgba(48, 48, 48, .3);
+}
+
+.header, .gorev-form{
+    min-height: 15vh;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+
+.btn-gorev-ekle{
+    border-style: solid;
+    border-color: rgb(244, 244, 244);
+    background-color: rgb(244, 244, 244);
+    color: #262626;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
+.btn-gorev-ekle:hover{
+    color: rgb(244, 244, 244);
+    background-color: #262626;
+    border-color: #262626;
+}
+
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+    border-radius: .2rem;
+}
+
+.gorev-item{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1.2rem;
+    background-color: #ECF0F1;
+    border-radius: .3rem;
+    transition: .3s ease-in-out;
+}
+
+.gorev-tanim{
+    flex: 1;
+    padding: 1rem;
+
+}
+
+.input-gorev{
+    border-radius: .1rem;
+}
+
+.gorev-btn{
+    background-color: #1BBF91;
+    color:#262626;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    cursor: pointer;
+    color: #ECF0F1;
+}
+
+.gorev-btn-sil{
+    background-color: #F23827;
+}
+
+.gorev-tamamlandi{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fas{
+    pointer-events: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.2);
+    color: white;
+    text-align: center;
+  }
+
+  .kaybol{
+      transform: scale(0);
+  }
+
+
+
+  
